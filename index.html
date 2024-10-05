@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSecure</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #10101E; /* Darker bluish-black background */
+            color: #fff; /* White text for readability */
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: relative;
+            background-color: #10101E; /* Match header background */
+            height: 150px; /* Height for the header */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 3rem; /* Increased font size */
+            color: #fff; /* White color for contrast */
+            position: absolute;
+            top: 20%;
+            left: 22%; /* Move text towards the left */
+            transform: translate(-50%, -30%); /* Adjust overlap with the logo */
+            z-index: 1; /* Ensure text is above the image */
+        }
+
+        .header img {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 200px; /* Enlarged logo */
+            height: 120px;
+            border: none; /* Remove any border */
+            outline: none; /* Remove any outline */
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #121212; /* Darker background for content */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            padding: 20px;
+        }
+
+        .feature-item {
+            background-color: #e0e0e0; /* Light background for feature items */
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: scale(1.05);
+        }
+
+        .feature-item img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .feature-item h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="./image (1).png" alt="CyberSecure Logo">
+        <h1>CyberSecure</h1>
+    </header>
+
+    <div class="content">
+        <h2>Features</h2>
+        <div class="features">
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/100" alt="Manager Icon">
+                <h3>Manager Detection</h3>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/100" alt="Password Strength Icon">
+                <h3>Password Strength</h3>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/100" alt="Cyber Quiz Icon">
+                <h3>Cyber Quiz</h3>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/100" alt="Scam Call Simulation Icon">
+                <h3>Scam Call Simulation</h3>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/100" alt="Data Breach Checker Icon">
+                <h3>Data Breach Checker</h3>
+            </div>
+            <div class="feature-item">
+                <img src="https://via.placeholder.com/100" alt="Cyber Guide Icon">
+                <h3>Cyber Guide</h3>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
